@@ -278,12 +278,12 @@
     <div class="wrap">
       <div class="label">Trusted to deliver for the world's leading brands</div>
       <div class="logos">
-        <span class="logo-chip logo-svg" data-brand="telus" data-label="TELUS">TELUS</span>
-        <span class="logo-chip logo-svg" data-brand="sap" data-label="SAP">SAP</span>
-        <span class="logo-chip logo-svg" data-brand="disney" data-label="Disney">Disney</span>
-        <span class="logo-chip logo-svg" data-brand="salesforce" data-label="Salesforce">Salesforce</span>
-        <span class="logo-chip logo-svg" data-brand="tableau" data-label="Tableau">Tableau</span>
-        <span class="logo-chip logo-svg" data-brand="espn" data-label="ESPN">ESPN</span>
+        <span class="logo-chip">TELUS</span>
+        <span class="logo-chip">SAP</span>
+        <span class="logo-chip">Disney</span>
+        <span class="logo-chip">Salesforce</span>
+        <span class="logo-chip">Tableau</span>
+        <span class="logo-chip">ESPN</span>
         <span class="logo-chip">Gartner</span>
         <span class="logo-chip">SXSW</span>
         <span class="logo-chip">CES</span>
@@ -463,29 +463,6 @@
   </div>
 </footer>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Load SVG logos from jsDelivr
-document.querySelectorAll('.logo-svg').forEach(chip => {
-  const brand = chip.dataset.brand;
-  const label = chip.dataset.label;
-  fetch(`https://cdn.jsdelivr.net/npm/simple-icons@11/icons/${brand}.svg`)
-    .then(r => r.text())
-    .then(svg => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(svg, 'image/svg+xml');
-      const svgEl = doc.querySelector('svg');
-      svgEl.setAttribute('height', '28');
-      svgEl.setAttribute('width', 'auto');
-      svgEl.style.fill = '#ffffff';
-      svgEl.style.opacity = '0.85';
-      svgEl.setAttribute('aria-label', label);
-      chip.innerHTML = '';
-      chip.appendChild(svgEl);
-    })
-    .catch(() => { chip.textContent = label; });
-});
-</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
