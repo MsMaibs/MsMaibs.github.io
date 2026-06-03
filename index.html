@@ -104,9 +104,11 @@
   .trusted::before { content: ""; position: absolute; top: -120px; right: -80px; width: 380px; height: 380px; background: radial-gradient(circle, rgba(216,138,152,0.18), transparent 70%); }
   .trusted .label { text-align: center; font-size: 13px; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(255,255,255,0.55); font-weight: 700; margin-bottom: 34px; position: relative; }
   .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 26px; position: relative; }
-  .logo-chip { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.02em; color: #fff; padding: 12px 24px; border: 1.5px solid rgba(255,255,255,0.16); border-radius: 14px; background: rgba(255,255,255,0.04); transition: all .25s; }
+  .logo-chip { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.02em; color: #fff; padding: 12px 24px; border: 1.5px solid rgba(255,255,255,0.16); border-radius: 14px; background: rgba(255,255,255,0.04); transition: all .25s; display: inline-flex; align-items: center; justify-content: center; }
   .logo-chip:hover { border-color: var(--accent-light); background: rgba(216,138,152,0.14); transform: translateY(-3px); }
   .logo-chip .tm { font-size: 11px; vertical-align: super; opacity: 0.6; }
+  .logo-chip img { height: 28px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; transition: opacity .25s; }
+  .logo-chip:hover img { opacity: 1; }
 
   /* Problems I solve */
   .problems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -188,6 +190,9 @@
     .stats { grid-template-columns: 1fr; }
     .contact-band { padding: 52px 26px; }
     .wrap, .nav-inner { padding: 0 22px; }
+    section { padding: 52px 0; }
+    .hero { padding: 52px 0 44px; }
+    .section-head { margin-bottom: 32px; }
   }
 </style>
 </head>
@@ -213,7 +218,7 @@
         <div>
           <span class="pill"><span class="dot"></span> 18 years in digital product &amp; delivery</span>
           <h1>Maibel<br /><span class="last">Rafferty</span></h1>
-          <p class="lede">A senior product and delivery leader working at the <span class="hl">intersection of product strategy, delivery, and engineering</span>. I build and modernize web and mobile experiences, lead complex migrations, drive digital transformation, and create digital products used by millions.</p>
+          <p class="lede">A senior product and delivery leader operating at the <span class="hl">intersection of product strategy, delivery, and engineering</span> — building and modernizing web and mobile experiences, leading complex migrations, driving digital transformation, and shipping digital products used by millions.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#contact">Get in touch</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">Connect on LinkedIn</a>
@@ -252,6 +257,7 @@
           <h2>Where product strategy meets delivery and engineering.</h2>
           <p>I turn ambitious strategy into data-driven roadmaps that deliver measurable outcomes. Across 18 years in digital technology - at both high-growth startups and large enterprises - I've worked the full lifecycle, from building marketing websites to leading complex platform migrations and modernizing mission-critical web and mobile applications. That range means I'm equally at home with scale and with change management.</p>
           <p>My focus is digital transformation at scale: standing up products from 0 to 1 and growing them 1 to many, while balancing customer experience, engineering health, and commercial impact. I sit deliberately at the cross-section of product strategy, delivery, and engineering - senior enough to align teams around outcomes, and never afraid to roll up my sleeves and get into the detail.</p>
+          <p>What makes the work stick is how it gets done. I build trust with stakeholders at every level - translating between business, product, and engineering so everyone is moving in the same direction. I'm known for being direct, low-ego, and easy to work with under pressure - the kind of partner executives and delivery teams both want in the room.</p>
           <p>I lead by building high-performing, accountable teams - sustaining top engagement while driving conversion, adoption, and cost efficiency across the business.</p>
         </div>
         <aside class="about-aside">
@@ -272,14 +278,17 @@
     <div class="wrap">
       <div class="label">Trusted to deliver for the world's leading brands</div>
       <div class="logos">
-        <span class="logo-chip">TELUS</span>
-        <span class="logo-chip">SAP</span>
-        <span class="logo-chip">Disney</span>
-        <span class="logo-chip">Salesforce</span>
-        <span class="logo-chip">Tableau</span>
+        <span class="logo-chip logo-svg" data-brand="telus" data-label="TELUS">TELUS</span>
+        <span class="logo-chip logo-svg" data-brand="sap" data-label="SAP">SAP</span>
+        <span class="logo-chip logo-svg" data-brand="disney" data-label="Disney">Disney</span>
+        <span class="logo-chip logo-svg" data-brand="salesforce" data-label="Salesforce">Salesforce</span>
+        <span class="logo-chip logo-svg" data-brand="tableau" data-label="Tableau">Tableau</span>
+        <span class="logo-chip logo-svg" data-brand="espn" data-label="ESPN">ESPN</span>
+        <span class="logo-chip">Gartner</span>
         <span class="logo-chip">SXSW</span>
-        <span class="logo-chip">ESPN</span>
         <span class="logo-chip">CES</span>
+        <span class="logo-chip">Earls</span>
+        <span class="logo-chip">BC Liquor Stores</span>
       </div>
     </div>
   </div>
@@ -301,12 +310,12 @@
         <div class="problem-card">
           <div class="no">02</div>
           <div class="q">"AI feels like hype, not impact."</div>
-          <div class="a">I make AI real, not theoretical - building co-pilots that <b>synthesize customer feedback to shape product strategy</b> and leading my org to be the <b>first to adopt AI</b> in day-to-day delivery.</div>
+          <div class="a">I make AI practical, not theoretical — embedding it into how teams actually work: <b>synthesizing workshop outcomes</b>, <b>translating business requirements into technical specs</b>, and shipping real AI-driven capabilities. My team was among the <b>first to launch AI-powered features in MyTELUS</b>.</div>
         </div>
         <div class="problem-card">
           <div class="no">03</div>
           <div class="q">"Our teams are stretched and disengaged."</div>
-          <div class="a">I build cultures where people thrive - sustaining a <b>100% team engagement score</b>, including a perfect <b>100% on direct-manager questions</b>.</div>
+          <div class="a">I build cultures where people thrive - sustaining a <b>100% team engagement score</b> and helping numerous team members grow beyond what they thought possible, progressing into roles they hadn't yet imagined for themselves.</div>
         </div>
         <div class="problem-card">
           <div class="no">04</div>
@@ -315,8 +324,8 @@
         </div>
         <div class="problem-card">
           <div class="no">05</div>
-          <div class="q">"Strategy and execution are disconnected."</div>
-          <div class="a">I connect vision to delivery. On TELUS's Moves program I <b>tripled self-serve adoption (9% → ~30%)</b>, drove <b>$327K in annual ops savings</b>, and created the playbook marketing reused for other programs.</div>
+          <div class="q">"Nobody can get stakeholders aligned."</div>
+          <div class="a">I earn trust across business, product, and engineering — translating between each so decisions stick. On TELUS's Moves program, that alignment <b>tripled self-serve adoption (9% → ~30%)</b> and drove <b>$327K in annual ops savings</b>.</div>
         </div>
         <div class="problem-card">
           <div class="no">06</div>
@@ -454,6 +463,29 @@
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Load SVG logos from jsDelivr
+document.querySelectorAll('.logo-svg').forEach(chip => {
+  const brand = chip.dataset.brand;
+  const label = chip.dataset.label;
+  fetch(`https://cdn.jsdelivr.net/npm/simple-icons@11/icons/${brand}.svg`)
+    .then(r => r.text())
+    .then(svg => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(svg, 'image/svg+xml');
+      const svgEl = doc.querySelector('svg');
+      svgEl.setAttribute('height', '28');
+      svgEl.setAttribute('width', 'auto');
+      svgEl.style.fill = '#ffffff';
+      svgEl.style.opacity = '0.85';
+      svgEl.setAttribute('aria-label', label);
+      chip.innerHTML = '';
+      chip.appendChild(svgEl);
+    })
+    .catch(() => { chip.textContent = label; });
+});
+</script>
 </body>
 </html>
