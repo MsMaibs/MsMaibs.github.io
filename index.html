@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maibel Rafferty - Product &amp; Delivery Leader</title>
+<meta name="description" content="Maibel Rafferty - product and delivery leader with 18 years in digital, working at the intersection of product strategy, delivery, and engineering. Digital transformation, platform migrations, and modern web &amp; mobile at scale." />
+<meta property="og:title" content="Maibel Rafferty - Product &amp; Delivery Leader" />
+<meta property="og:description" content="A product and delivery leader at the intersection of product strategy, delivery, and engineering - driving digital transformation, conversion, adoption, and cost efficiency at scale." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #221318;
+    --ink-soft: #574a4d;
+    --ink-faint: #978a8d;
+    --line: #ece2e4;
+    --bg: #fdfbfb;
+    --bg-card: #ffffff;
+    --bg-soft: #faf2f3;
+    --navy: #2a0f16;
+    --navy-2: #3a1620;
+    --accent: #9b2242;
+    --accent-deep: #7a1a33;
+    --accent-light: #d98a98;
+    --accent-soft: #f7e9ec;
+    --grad: linear-gradient(120deg, #7a1a30 0%, #b83a52 55%, #e8836f 100%);
+    --max: 1120px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; font-size: 17px; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+  h1, h2, h3, .display { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  /* Nav */
+  header.nav { position: sticky; top: 0; z-index: 50; background: rgba(252,253,255,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+  .brand { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; }
+  .brand .dot { color: var(--accent); }
+  .nav-links { display: flex; gap: 30px; }
+  .nav-links a { color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--accent); }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 600; padding: 14px 26px; border-radius: 999px; transition: all .2s; cursor: pointer; border: none; }
+  .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 8px 22px -8px rgba(155,34,66,0.6); }
+  .btn-primary:hover { background: var(--accent-deep); transform: translateY(-2px); box-shadow: 0 12px 28px -8px rgba(155,34,66,0.7); }
+  .btn-ghost { color: var(--ink); border: 1.5px solid var(--line); background: var(--bg-card); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Hero */
+  .hero { position: relative; padding: 84px 0 70px; }
+  .hero-grid { display: grid; grid-template-columns: 1.45fr 0.95fr; gap: 60px; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 9px; font-size: 13.5px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 8px 16px; border-radius: 999px; margin-bottom: 28px; }
+  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(155,34,66,0.15); }
+  .hero h1 { font-weight: 700; font-size: clamp(56px, 9vw, 104px); line-height: 0.95; letter-spacing: -0.04em; margin-bottom: 28px; }
+  .hero h1 .last { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .lede { font-size: clamp(19px, 2.1vw, 23px); color: var(--ink-soft); max-width: 560px; margin-bottom: 36px; }
+  .hero .lede .hl { color: var(--ink); font-weight: 600; box-shadow: inset 0 -0.55em 0 rgba(155,34,66,0.14); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+  /* Portrait */
+  .portrait { position: relative; }
+  .portrait::before { content: ""; position: absolute; inset: -22px -22px 24px 24px; background: var(--grad); border-radius: 30px; z-index: 0; opacity: 0.92; transform: rotate(-3deg); }
+  .portrait .frame { position: relative; z-index: 1; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; background: linear-gradient(160deg, var(--accent-soft), var(--bg-soft)); border: 5px solid #fff; box-shadow: 0 30px 60px -24px rgba(14,21,48,0.35); display: flex; align-items: center; justify-content: center; }
+  .portrait .frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .portrait .placeholder { text-align: center; color: var(--ink-faint); padding: 24px; }
+  .portrait .placeholder .initials { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 72px; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; }
+  .portrait .placeholder .hint { font-size: 13px; margin-top: 14px; }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 60px; }
+  .stat { padding: 30px 28px; border-radius: 20px; background: var(--bg-card); border: 1px solid var(--line); position: relative; overflow: hidden; }
+  .stat::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--grad); }
+  .stat .num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 50px; font-weight: 700; line-height: 1; letter-spacing: -0.03em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .stat .lbl { font-size: 14.5px; color: var(--ink-soft); margin-top: 12px; }
+
+  /* Sections */
+  section { padding: 84px 0; }
+  .section-head { margin-bottom: 50px; max-width: 760px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 9px; text-transform: uppercase; letter-spacing: 0.16em; font-size: 13px; font-weight: 700; color: var(--accent); margin-bottom: 16px; }
+  .eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--accent); border-radius: 2px; }
+  .section-head h2 { font-weight: 700; font-size: clamp(34px, 5vw, 54px); letter-spacing: -0.03em; line-height: 1.04; }
+  .section-head p { color: var(--ink-soft); font-size: 19px; margin-top: 18px; }
+
+  /* About */
+  .about { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: start; }
+  .about h2 { font-weight: 700; font-size: clamp(34px, 5vw, 54px); letter-spacing: -0.03em; margin-bottom: 24px; line-height: 1.04; }
+  .about h2 .wave { -webkit-text-fill-color: initial; }
+  .about p { color: var(--ink-soft); margin-bottom: 18px; font-size: 18px; }
+  .about p:last-child { margin-bottom: 0; }
+  .about-aside { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 30px; box-shadow: 0 20px 40px -28px rgba(14,21,48,0.25); }
+  .about-aside h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); font-weight: 700; margin-bottom: 18px; }
+  .fact { padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .fact:last-child { border-bottom: none; padding-bottom: 0; }
+  .fact .k { font-size: 13px; color: var(--ink-faint); margin-bottom: 2px; }
+  .fact .v { font-size: 15px; font-weight: 600; color: var(--ink); }
+
+  /* Trusted logo band (dark, bold) */
+  .trusted { background: var(--navy); color: #fff; padding: 64px 0; position: relative; overflow: hidden; }
+  .trusted::before { content: ""; position: absolute; top: -120px; right: -80px; width: 380px; height: 380px; background: radial-gradient(circle, rgba(216,138,152,0.18), transparent 70%); }
+  .trusted .label { text-align: center; font-size: 13px; text-transform: uppercase; letter-spacing: 0.22em; color: rgba(255,255,255,0.55); font-weight: 700; margin-bottom: 34px; position: relative; }
+  .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 26px; position: relative; }
+  .logo-chip { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.02em; color: #fff; padding: 12px 24px; border: 1.5px solid rgba(255,255,255,0.16); border-radius: 14px; background: rgba(255,255,255,0.04); transition: all .25s; }
+  .logo-chip:hover { border-color: var(--accent-light); background: rgba(216,138,152,0.14); transform: translateY(-3px); }
+  .logo-chip .tm { font-size: 11px; vertical-align: super; opacity: 0.6; }
+
+  /* Problems I solve */
+  .problems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .problem-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 32px 30px; transition: all .25s; position: relative; overflow: hidden; }
+  .problem-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+  .problem-card:hover { transform: translateY(-4px); box-shadow: 0 26px 50px -28px rgba(14,21,48,0.35); border-color: transparent; }
+  .problem-card:hover::before { transform: scaleX(1); }
+  .problem-card .no { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 15px; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 16px; }
+  .problem-card .q { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 12px; letter-spacing: -0.01em; line-height: 1.25; }
+  .problem-card .a { color: var(--ink-soft); font-size: 15.5px; }
+  .problem-card .a b { color: var(--ink); font-weight: 600; }
+
+  /* Testimonials */
+  .quotes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .quote-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; }
+  .quote-card .mark { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 48px; line-height: 0.6; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 16px; }
+  .quote-card .text { color: var(--ink-soft); font-size: 15.5px; flex: 1; }
+  .quote-card .who { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .quote-card .who .name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 15px; color: var(--ink); }
+  .quote-card .who .role { font-size: 13px; color: var(--ink-faint); margin-top: 3px; }
+
+  /* Experience */
+  .job { display: grid; grid-template-columns: 220px 1fr; gap: 44px; padding: 38px 0; border-top: 1px solid var(--line); }
+  .job:first-child { border-top: none; padding-top: 0; }
+  .job-meta .company { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+  .job-meta .dates { color: var(--ink-faint); font-size: 14px; margin-top: 5px; font-weight: 500; }
+  .job-body h3 { font-size: 22px; font-weight: 600; margin-bottom: 15px; letter-spacing: -0.015em; }
+  .job-body ul { list-style: none; }
+  .job-body li { position: relative; padding-left: 24px; margin-bottom: 11px; color: var(--ink-soft); font-size: 16px; }
+  .job-body li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--grad); }
+  .job-body li b { color: var(--ink); font-weight: 600; }
+
+  /* Skills + education */
+  .skills { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .skill-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
+  .skill-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 18px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+  .skill-card h3 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--grad); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 13.5px; padding: 7px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-deep); font-weight: 600; }
+  .ed-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 22px; }
+  .ed-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
+  .ed-card h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); font-weight: 700; margin-bottom: 18px; }
+  .ed-item { padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .ed-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .ed-item .deg { font-weight: 600; font-size: 16px; }
+  .ed-item .inst { color: var(--ink-soft); font-size: 14.5px; margin-top: 3px; }
+  .cert .ci { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 12px; }
+  .cert .ci:last-child { border-bottom: none; }
+  .cert .ci .yr { color: var(--ink-faint); font-size: 13px; white-space: nowrap; font-weight: 600; }
+
+  /* Contact */
+  .contact-band { position: relative; overflow: hidden; background: var(--navy); color: #fff; border-radius: 30px; padding: 72px 48px; text-align: center; }
+  .contact-band::before { content: ""; position: absolute; inset: 0; background: var(--grad); opacity: 0.18; }
+  .contact-band::after { content: ""; position: absolute; bottom: -140px; left: 50%; transform: translateX(-50%); width: 520px; height: 360px; background: radial-gradient(circle, rgba(216,138,152,0.25), transparent 70%); }
+  .contact-band > * { position: relative; z-index: 1; }
+  .contact-band h2 { font-size: clamp(34px, 5vw, 56px); font-weight: 700; margin-bottom: 16px; letter-spacing: -0.03em; }
+  .contact-band p { color: rgba(255,255,255,0.82); max-width: 560px; margin: 0 auto 32px; font-size: 18px; }
+  .contact-band .cta-row { justify-content: center; }
+  .contact-band .btn-primary { background: #fff; color: var(--accent-deep); box-shadow: 0 12px 30px -10px rgba(0,0,0,0.5); }
+  .contact-band .btn-primary:hover { background: #eef3ff; }
+  .contact-band .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+  .contact-band .btn-ghost:hover { border-color: #fff; color: #fff; }
+
+  footer { padding: 44px 0 64px; text-align: center; color: var(--ink-faint); font-size: 14px; }
+  footer a { color: var(--ink-soft); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hero-grid { grid-template-columns: 1fr; gap: 52px; }
+    .portrait { max-width: 330px; margin: 0 auto; }
+    .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    .problems-grid { grid-template-columns: 1fr; }
+    .quotes-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .ed-grid { grid-template-columns: 1fr; }
+    .job { grid-template-columns: 1fr; gap: 14px; }
+    .stats { grid-template-columns: 1fr; }
+    .contact-band { padding: 52px 26px; }
+    .wrap, .nav-inner { padding: 0 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="brand">Maibel Rafferty<span class="dot">.</span></span>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#help">Problems I Solve</a>
+      <a href="#praise">Endorsements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="pill"><span class="dot"></span> 18 years in digital product &amp; delivery</span>
+          <h1>Maibel<br /><span class="last">Rafferty</span></h1>
+          <p class="lede">A senior product and delivery leader operating at the <span class="hl">intersection of product strategy, delivery, and engineering</span> — building and modernizing web and mobile experiences, leading complex migrations, driving digital transformation, and shipping digital products used by millions.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <div class="frame">
+            <!-- PHOTO: just save your photo as "headshot.jpg" in the same folder as this file.
+                 It will appear automatically. (jpg/png both fine - keep the name "headshot.jpg".) -->
+            <img id="headshot" src="headshot.jpg" alt="Maibel Rafferty"
+                 onerror="this.style.display='none';document.getElementById('mr-ph').style.display='block';" />
+            <div id="mr-ph" class="placeholder" style="display:none;">
+              <div class="initials">MR</div>
+              <div class="hint">Save your photo as<br />headshot.jpg here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="num">100%</div><div class="lbl">Team engagement, achieved repeatedly</div></div>
+        <div class="stat"><div class="num">$2.5M+</div><div class="lbl">Cost driven out of the business</div></div>
+        <div class="stat"><div class="num">3&times;</div><div class="lbl">Growth in self-serve adoption</div></div>
+        <div class="stat"><div class="num">10M+</div><div class="lbl">Customers served every month</div></div>
+        <div class="stat"><div class="num">2&times;</div><div class="lbl">Conversion lift on key journeys</div></div>
+        <div class="stat"><div class="num">27.5K+</div><div class="lbl">Support calls deflected to self-serve</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <h2>Where product strategy meets delivery and engineering.</h2>
+          <p>I turn ambitious strategy into data-driven roadmaps that deliver measurable outcomes. Across 18 years in digital technology - at both high-growth startups and large enterprises - I've worked the full lifecycle, from building marketing websites to leading complex platform migrations and modernizing mission-critical web and mobile applications. That range means I'm equally at home with scale and with change management.</p>
+          <p>My focus is digital transformation at scale: standing up products from 0 to 1 and growing them 1 to many, while balancing customer experience, engineering health, and commercial impact. I sit deliberately at the cross-section of product strategy, delivery, and engineering - senior enough to align teams around outcomes, and never afraid to roll up my sleeves and get into the detail.</p>
+          <p>I lead by building high-performing, accountable teams - sustaining top engagement while driving conversion, adoption, and cost efficiency across the business.</p>
+        </div>
+        <aside class="about-aside">
+          <h3>At a glance</h3>
+          <div class="fact"><div class="k">Based in</div><div class="v">North Vancouver, BC</div></div>
+          <div class="fact"><div class="k">Experience</div><div class="v">18 years in digital technology</div></div>
+          <div class="fact"><div class="k">Focus</div><div class="v">Product Strategy · Delivery · Engineering</div></div>
+          <div class="fact"><div class="k">Leadership</div><div class="v">Global teams of 50+</div></div>
+          <div class="fact"><div class="k">Recognition</div><div class="v">CHLOE Nominee - Leadership Excellence</div></div>
+          <div class="fact"><div class="k">Education</div><div class="v">MBA, Technology &amp; Biotechnology (SFU)</div></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED LOGO BAND -->
+  <div class="trusted">
+    <div class="wrap">
+      <div class="label">Trusted to deliver for the world's leading brands</div>
+      <div class="logos">
+        <span class="logo-chip">TELUS</span>
+        <span class="logo-chip">SAP</span>
+        <span class="logo-chip">Disney</span>
+        <span class="logo-chip">Salesforce</span>
+        <span class="logo-chip">Tableau</span>
+        <span class="logo-chip">SXSW</span>
+        <span class="logo-chip">ESPN</span>
+        <span class="logo-chip">CES</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW I HELP / PROBLEMS -->
+  <section id="help">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Problems I solve</p>
+        <h2>Where I create the most value.</h2>
+        <p>The challenges I tackle, and the outcomes I deliver against them.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="no">01</div>
+          <div class="q">"Our digital product isn't converting."</div>
+          <div class="a">I dig into the funnel and fix what's broken - work that <b>cut page load from 15s to 6s</b>, <b>doubled offer-tile click-through (0.8% → 1.7%)</b>, and lifted mid-funnel progression from <b>51% to 61%</b>.</div>
+        </div>
+        <div class="problem-card">
+          <div class="no">02</div>
+          <div class="q">"AI feels like hype, not impact."</div>
+          <div class="a">I make AI real, not theoretical - building co-pilots that <b>synthesize customer feedback to shape product strategy</b> and leading my org to be the <b>first to adopt AI</b> in day-to-day delivery.</div>
+        </div>
+        <div class="problem-card">
+          <div class="no">03</div>
+          <div class="q">"Our teams are stretched and disengaged."</div>
+          <div class="a">I build cultures where people thrive - sustaining a <b>100% team engagement score</b>, including a perfect <b>100% on direct-manager questions</b>.</div>
+        </div>
+        <div class="problem-card">
+          <div class="no">04</div>
+          <div class="q">"Delivery is slow and risk is everywhere."</div>
+          <div class="a">I put governance and operating models in place that cut waste - <b>saving $2.5M in capital costs</b> through a smarter talent model and <b>offloading 27.5K+ calls</b> from the call centre.</div>
+        </div>
+        <div class="problem-card">
+          <div class="no">05</div>
+          <div class="q">"Strategy and execution are disconnected."</div>
+          <div class="a">I connect vision to delivery. On TELUS's Moves program I <b>tripled self-serve adoption (9% → ~30%)</b>, drove <b>$327K in annual ops savings</b>, and created the playbook marketing reused for other programs.</div>
+        </div>
+        <div class="problem-card">
+          <div class="no">06</div>
+          <div class="q">"We're scaling and the model is breaking."</div>
+          <div class="a">I've led orgs of <b>50+</b> through reorg after reorg - owning capital planning, hiring, and the operating structure that lets high-stakes initiatives scale without breaking.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="praise">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Endorsements</p>
+        <h2>What colleagues say.</h2>
+        <p>In the words of the people I've led, partnered with, and reported to.</p>
+      </div>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">Capable of running the most complex projects and delivering on time and on budget. She handled some of our largest enterprise engagements - SXSW, CES, SAP - delivering a stellar mobile product for hundreds of thousands of users and happy clients.</div>
+          <div class="who"><div class="name">A. Ackermans</div><div class="role">VP, Product &amp; Engineering</div></div>
+        </div>
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">One of the best I've worked with on high-profile projects for SAP, ESPN, and Disney. Whether it's a complex program or a business relationship with international clients, she assesses the requirements quickly and assembles a plan of action.</div>
+          <div class="who"><div class="name">J. Chen</div><div class="role">Director of Product Design, Meta</div></div>
+        </div>
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">Maibel was critical in establishing and transforming our Home Solutions Digital org. Many of the changes she drove even reduced her own team's size and budget - she did it because she was dedicated to what was best for the business, not for herself.</div>
+          <div class="who"><div class="name">K. Rusnak</div><div class="role">Delivery &amp; Operations Leader · Maibel's former manager</div></div>
+        </div>
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">One of the best PMs I've worked with - passionate about doing the right thing in the right way. She knows when expectations are unrealistic, manages client expectations, and mitigates risk. Risk management and contingency planning are among her biggest strengths.</div>
+          <div class="who"><div class="name">T. Maitra</div><div class="role">Technology Manager, Enterprise Engineering, Lululemon</div></div>
+        </div>
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">She treats her projects as her own, doing whatever it takes to minimize risk and reach the goal - and beyond that, she's a strong negotiator who knows how to secure the right resources to get there.</div>
+          <div class="who"><div class="name">J. Suarez</div><div class="role">Enterprise Architect &amp; IT Strategist</div></div>
+        </div>
+        <div class="quote-card">
+          <div class="mark">&ldquo;</div>
+          <div class="text">By far the best people leader I've had in my career. Her wealth of knowledge shapes the success of those around her, and she always makes time to foster growth and learning. Passionate, professional, and fun.</div>
+          <div class="who"><div class="name">R. Stoch</div><div class="role">Development Director · former direct report</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS + EDUCATION -->
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Skills &amp; credentials</p>
+        <h2>What I bring to the table.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><span class="dot"></span> Product &amp; Strategy</h3>
+          <div class="tags">
+            <span class="tag">Product Strategy</span>
+            <span class="tag">Product Management</span>
+            <span class="tag">Digital Transformation</span>
+            <span class="tag">0 to 1 &amp; Scaling</span>
+            <span class="tag">Platform Migrations</span>
+            <span class="tag">Web &amp; Mobile Modernization</span>
+            <span class="tag">AI Strategy</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot"></span> Leadership &amp; People</h3>
+          <div class="tags">
+            <span class="tag">People Leadership</span>
+            <span class="tag">Global Team Leadership</span>
+            <span class="tag">Coaching &amp; Mentorship</span>
+            <span class="tag">Cross-Functional Alignment</span>
+            <span class="tag">Stakeholder Management</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><span class="dot"></span> Delivery &amp; Engineering</h3>
+          <div class="tags">
+            <span class="tag">Agile &amp; Scaled Delivery</span>
+            <span class="tag">Engineering Partnership</span>
+            <span class="tag">Operational Excellence</span>
+            <span class="tag">Governance</span>
+            <span class="tag">Risk &amp; Dependency Mgmt</span>
+            <span class="tag">Data-Driven Decisions</span>
+          </div>
+        </div>
+      </div>
+      <div class="ed-grid">
+        <div class="ed-card">
+          <h3>Education</h3>
+          <div class="ed-item"><div class="deg">MBA - Technology &amp; Biotechnology</div><div class="inst">Beedie / Segal Graduate School of Business, Simon Fraser University</div></div>
+          <div class="ed-item"><div class="deg">BSc - Chemistry</div><div class="inst">University of Alberta</div></div>
+        </div>
+        <div class="ed-card">
+          <h3>Certifications &amp; Training</h3>
+          <div class="cert">
+            <div class="ci"><span>Google Cloud Gen AI Leader Certification</span><span class="yr">2026</span></div>
+            <div class="ci"><span>Google Cloud Digital Leader Certification</span><span class="yr">2024</span></div>
+            <div class="ci"><span>Coaching Great Teams &middot; Effective Communication</span><span class="yr">2019-22</span></div>
+            <div class="ci"><span>Certified Scrum Master &amp; Product Owner</span><span class="yr">2010-19</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-band">
+        <h2>Let's connect.</h2>
+        <p>Building something ambitious, or have a hard problem worth solving? I'm always happy to trade ideas with people doing interesting work. Reach out anytime.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:maibelrafferty@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Maibel Rafferty &nbsp;&middot;&nbsp;
+    <a href="mailto:maibelrafferty@gmail.com">maibelrafferty@gmail.com</a> &nbsp;&middot;&nbsp;
+    <a href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
