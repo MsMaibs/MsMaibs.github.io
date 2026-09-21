@@ -116,6 +116,14 @@
   .logo-chip img { height: 28px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; transition: opacity .25s; }
   .logo-chip:hover img { opacity: 1; }
 
+  /* Products */
+  .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .product-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 30px; }
+  .product-card .where { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 10px; }
+  .product-card h3 { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .product-card p { color: var(--ink-soft); font-size: 15.5px; }
+  .ai-badge { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; padding: 4px 11px; border-radius: 999px; background: var(--grad); color: #fff; letter-spacing: 0.02em; }
+
   /* Problems I solve */
   .problems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   .problem-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 20px; padding: 32px 30px; transition: all .25s; position: relative; overflow: hidden; }
@@ -189,6 +197,7 @@
     .portrait { max-width: 330px; margin: 0 auto; }
     .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .problems-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr; }
     .quotes-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .ed-grid { grid-template-columns: 1fr; }
@@ -226,6 +235,7 @@
     <span class="brand">Maibel Rafferty<span class="dot">.</span></span>
     <nav class="nav-links">
       <a href="#about">About</a>
+      <a href="#products">Products</a>
       <a href="#help">Problems I Solve</a>
       <a href="#praise">Endorsements</a>
       <a href="#contact">Contact</a>
@@ -265,7 +275,7 @@
         <div class="stat"><div class="num">100%</div><div class="lbl">Team engagement, achieved repeatedly</div></div>
         <div class="stat"><div class="num">$2.5M+</div><div class="lbl">Cost driven out of the business</div></div>
         <div class="stat"><div class="num">3&times;</div><div class="lbl">Growth in self-serve adoption</div></div>
-        <div class="stat"><div class="num">10M+</div><div class="lbl">Customers served every month</div></div>
+        <div class="stat"><div class="num">10M+</div><div class="lbl">Monthly visits across TELUS digital experiences</div></div>
         <div class="stat"><div class="num">50+</div><div class="lbl">Professionals led across product, delivery, and engineering</div></div>
         <div class="stat"><div class="num">27.5K+</div><div class="lbl">Support calls deflected to digital capabilities</div></div>
         <div class="stat"><div class="num">$6M+</div><div class="lbl">Product budget owned and delivered against</div></div>
@@ -283,6 +293,7 @@
           <p>I have led leaders - managing Product, Delivery, and Engineering Leads, each running their own teams - while owning <span class="hl">budgets of up to $6M</span> and owning the full product and delivery operating model. My approach is outcome-driven: I set <span class="hl">OKR-based roadmaps</span> that connect product decisions directly to business results, create clear accountability across product, engineering, and design, and make sure the team is always building the right things in the right order.</p>
           <p>What makes the work stick is how it gets done. I build <span class="hl">trust at every level</span>, translating business intent into technical direction, aligning stakeholders across complex organizations, and keeping teams focused through ambiguity. I'm known for being a results-driven leader and trusted partner who bridges the gap between executive vision and delivery execution, earning the confidence of leadership and the passion of delivery teams. I am the kind of leader both executives and delivery leaders want in the room.</p>
           <p>I build <span class="hl">high-performing, accountable teams</span>, sustaining top engagement while driving conversion, adoption, and cost efficiency across the business, and helping people grow into roles they hadn't yet imagined for themselves.</p>
+          <p>Outside TELUS, I've <span class="hl">co-owned two F45 Training studios</span> in Vancouver since 2019 - False Creek and Beach District. Carrying shared P&amp;L accountability for a membership business keeps me grounded in what customers actually value: every pricing decision, promotion, and member experience shows up directly in the results, and in who comes back next month. It's the same discipline I bring to product - just with members I know by name.</p>
         </div>
         <aside class="about-aside">
           <h3>At a glance</h3>
@@ -290,6 +301,7 @@
           <div class="fact"><div class="k">Experience</div><div class="v">18 years in digital technology</div></div>
           <div class="fact"><div class="k">Focus</div><div class="v">Product Management · Delivery · Leadership</div></div>
           <div class="fact"><div class="k">Leadership</div><div class="v">Global teams of 50+</div></div>
+          <div class="fact"><div class="k">Business owner</div><div class="v">Co-owner, F45 False Creek &amp; Beach District (since 2019)</div></div>
           <div class="fact"><div class="k">Education</div><div class="v">MBA, Technology &amp; Biotechnology (SFU)</div></div>
         </aside>
       </div>
@@ -315,6 +327,39 @@
       </div>
     </div>
   </div>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Products I've shipped</p>
+        <h2>Live on telus.com.</h2>
+        <p>A few of the customer experiences my teams built and run for TELUS customers.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="where">telus.com</div>
+          <h3>Bundle Builder</h3>
+          <p>A self-serve tool that lets customers put together their own combination of TELUS services online.</p>
+        </div>
+        <div class="product-card">
+          <div class="where">telus.com</div>
+          <h3>The Wizard</h3>
+          <p>A guided flow that helps customers find the TELUS products that fit what they need.</p>
+        </div>
+        <div class="product-card">
+          <div class="where">telus.com</div>
+          <h3>Move Journey</h3>
+          <p>The online experience for customers moving home, so they can take their TELUS services to a new address.</p>
+        </div>
+        <div class="product-card">
+          <div class="where">telus.com</div>
+          <h3>Bill Compare <span class="ai-badge">AI-powered</span></h3>
+          <p>An AI-powered tool that helps customers understand how their bill has changed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- HOW I HELP / PROBLEMS -->
   <section id="help">
