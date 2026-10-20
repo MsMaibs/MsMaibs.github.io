@@ -526,8 +526,15 @@
       <div class="contact-band">
         <h2>Let's connect.</h2>
         <p>Building something ambitious, or have a hard problem worth solving? I'm always happy to trade ideas with people doing interesting work. Reach out anytime.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:maibelrafferty@gmail.com">Email me</a>
+<div class="cta-row">
+          <a class="btn btn-primary" href="#" id="email-link">Email me</a>
+          <script>
+            (function(){
+              const u = "maibelrafferty";
+              const d = "gmail.com";
+              document.getElementById("email-link").href = "mailto:" + u + "@" + d;
+            })();
+          </script>>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">Connect on LinkedIn</a>
         </div>
       </div>
@@ -538,7 +545,16 @@
 <footer>
   <div class="wrap">
     &copy; <span id="year"></span> Maibel Rafferty &nbsp;&middot;&nbsp;
-    <a href="mailto:maibelrafferty@gmail.com">maibelrafferty@gmail.com</a> &nbsp;&middot;&nbsp;
+    <a href="#" id="email-link-2">email</a> &nbsp;&middot;&nbsp;
+<script>
+  (function(){
+    const u = "maibelrafferty";
+    const d = "gmail.com";
+    const el = document.getElementById("email-link-2");
+    el.href = "mailto:" + u + "@" + d;
+    el.textContent = u + "@" + d;
+  })();
+</script>
     <a href="https://www.linkedin.com/in/maibelrafferty/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </footer>
